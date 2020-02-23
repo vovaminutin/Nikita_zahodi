@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main_space1{
+    width: 1280px;
+    height: 590px;
+    background-color: #05234f;
+}
+.main_space2{
+    padding-top: 20px;
+    padding-bottom: 534px;
+    width: 1280px;
+    height: 60px;
+}
+.sellmyforms{
+    width: 118px;
+    height: 30px;
+    object-fit: contain;
+    padding-left: 174px;
+    margin-top: 20px;
+    position: relative;
+}
+.text_mainspace{
+    display: flex;
+    vertical-align: top;
+    padding-left: 445px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    color: #ffffff;
+}
+.text{
+    padding: 25px;
+}
+.text_mainspace :hover{
+    border-bottom: 3px solid #ff9e20;
+    transition-timing-function: ease-out;
+    transition-duration: .45s ease;
+    transition-property: width,background-color;
+}
+.img_mainspace{
+    width: 388px;
+    height: 393px;
+    margin-top: 100px;
+    margin-left: 554px;
+}
+.text_mainspace_2{
+    margin-top: 133px;
+    width: 520px;
+    height: 96px;
+    font-family: OpenSans;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #ffffff
+}
