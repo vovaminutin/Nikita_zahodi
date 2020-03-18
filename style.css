@@ -43,7 +43,8 @@ nav{
 .header-nav{
     width: 551.27px;
     height: 43px;
-    text-align: center;
+    text-align: right;
+    top: 0;
 }
 .header-nav a{
     position: relative;
@@ -348,8 +349,6 @@ span.line-break{
 .features-widget{
     width: 940px;
     height: 377px;
-    
-    
 }
 .features-widget{
     width: 940px;
@@ -358,6 +357,12 @@ span.line-break{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.features-widget__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
 }
 @media only screen and (min-width: 980px)
 .features-widget__viewport {
@@ -397,6 +402,67 @@ span.line-break{
     height: 100%;
     outline: none;
     display: none;
+}
+.features-widget__navigation {
+    width: 320px;
+    height: 304px;
+}
+.features-widget__navigation .slick-list {
+    padding: 0!important;
+    margin: 0;
+    position: relative;
+    display: block;
+}
+.features-widget__navigation .slick-track {
+    display: flex;
+    flex-direction: column;
+    width: 100%!important;
+    transform: none!important;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.slick-track:after, .slick-track:before {
+    display: table;
+    content: "";
+}
+.features-widget__navigation .slick-current {
+    box-shadow: 0 6px 15px 0 rgba(0,0,0,.15);
+}
+.slick-slide{
+    width: 320px;
+    height: 76px;
+}
+.features-widget__navigation .slick-slide {
+    width: 100%!important;
+    height: 76px;
+    margin-bottom: 0;
+    transition: box-shadow .2s ease;
+    box-shadow: 0 6px 15px 0 rgba(0,0,0,.15);
+}
+.features-widget__navigation-item {
+    padding: 22px 20px 22px 16px;
+    position: relative;
+    display: flex!important;
+    cursor: pointer;
+}
+.features-widget__navigation-item:before {
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    border-radius: 34px;
+    background-color: transparent;
+    content: "";
+}
+.features-widget__navigation-icon {
+    color: #d2e4ff;
 }
 .page-section--benefits{
     width: 100%;
