@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+    <defs>
+        <linearGradient id="prefix__c" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#199ADF"/>
+            <stop offset="100%" stop-color="#0073B1"/>
+        </linearGradient>
+        <filter id="prefix__a" width="266.7%" height="266.7%" x="-83.3%" y="-66.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+        </filter>
+        <rect id="prefix__b" width="60" height="60" x="0" y="0" rx="12"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(30 20)">
+        <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+        <use fill="url(#prefix__c)" xlink:href="#prefix__b"/>
+        <g fill="#FFF" fill-rule="nonzero">
+            <path d="M.432 11.082H7.944V33.986000000000004H.432zM32.596 13.174c-1.578-1.749-3.665-2.623-6.26-2.623-.956 0-1.825.119-2.607.358-.781.239-1.44.574-1.98 1.005-.538.432-.967.832-1.286 1.202-.303.351-.599.76-.888 1.223v-3.257h-7.489l.023 1.11c.016.74.023 3.02.023 6.84 0 3.822-.015 8.806-.045 14.954h7.488V21.205c0-.786.083-1.41.25-1.872.32-.787.8-1.445 1.446-1.976.645-.532 1.446-.798 2.402-.798 1.305 0 2.265.458 2.88 1.375.614.917.921 2.184.921 3.802v12.25h7.489V20.858c0-3.375-.789-5.937-2.367-7.685zM4.234.057c-1.26 0-2.28.374-3.062 1.121C.391 1.926 0 2.87 0 4.01c0 1.125.38 2.065 1.138 2.82.759.755 1.76 1.133 3.005 1.133h.045c1.275 0 2.303-.378 3.085-1.133.781-.755 1.164-1.695 1.149-2.82-.015-1.14-.402-2.083-1.16-2.83C6.501.43 5.492.056 4.233.056z" transform="translate(13 12)"/>
+        </g>
+    </g>
+</svg>

@@ -3,32 +3,591 @@
 <head>
     <meta charset="UTF-8">
     <title>Very big project</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js"></script>
+    
 </head>
 <body>
-    <div class="main_space1">
-        <div class="main_space2">
-            <div class="text_mainspace">
-                <a class="text">Home</a>
-                <a class="text">Upload your document</a>
-                <a class="text">How it Works</a>
-                <a class="text">Categories</a>
-                <a class="text">How to sell</a>
+    <div class="layout-responsible" role="main">
+        <div class="layout-responsive__header">
+            <div class="page-header">
+                <div class="page-header__inner111">
+                <div class="page-header__logo">
+                    <a class="header-logo" href="https://sellmyforms.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="118" height="30" viewBox="0 0 118 30">
+                            <g fill="none">
+                                <path fill="#FFF" d="M9.791 10.098c0 .797-.202 1.504-.606 2.122-.405.618-.988 1.099-1.75 1.442-.761.342-1.655.514-2.68.514-.856 0-1.573-.06-2.153-.18a7.994 7.994 0 0 1-1.811-.629v-3.094c.662.34 1.35.605 2.065.796.715.19 1.372.285 1.97.285.515 0 .893-.089 1.133-.268a.824.824 0 0 0 .36-.69.76.76 0 0 0-.145-.46 1.689 1.689 0 0 0-.466-.4C5.495 9.4 4.925 9.124 4 8.708c-.838-.38-1.466-.75-1.885-1.107a3.4 3.4 0 0 1-.932-1.23C.98 5.907.88 5.36.88 4.727c0-1.184.43-2.107 1.292-2.769.861-.662 2.045-.993 3.55-.993 1.33 0 2.687.307 4.07.923l-1.063 2.68c-1.202-.55-2.239-.826-3.112-.826-.451 0-.78.08-.984.237-.205.159-.308.355-.308.59 0 .251.13.477.391.676.261.2.969.563 2.123 1.09 1.107.498 1.876 1.033 2.307 1.604.43.571.646 1.29.646 2.158zm6.592 4.078c-1.658 0-2.946-.441-3.863-1.323-.917-.882-1.375-2.137-1.375-3.766 0-1.682.424-2.972 1.274-3.872.85-.9 2.062-1.349 3.639-1.349 1.5 0 2.658.391 3.476 1.174.817.782 1.226 1.908 1.226 3.379v1.53h-6.144c.024.556.227.992.611 1.309.384.316.907.474 1.569.474.603 0 1.159-.057 1.665-.171a8.25 8.25 0 0 0 1.648-.584v2.47a6.063 6.063 0 0 1-1.67.57c-.574.106-1.26.159-2.056.159zm-.202-7.972c-.405 0-.743.128-1.015.382-.273.255-.433.655-.48 1.2h2.954c-.012-.48-.148-.864-.409-1.151-.26-.287-.61-.43-1.05-.43zM26.139 14h-3.437V.324h3.437V14zm5.818 0h-3.436V.324h3.436V14z"></path>
+                                <path fill="#C4DBFF" d="M40.14 14l-2.628-9.255h-.08c.124 1.576.185 2.8.185 3.674V14h-3.076V1.15h4.623l2.68 9.123h.071l2.628-9.123h4.632V14h-3.19V8.366c0-.293.004-.618.013-.975.008-.358.048-1.234.118-2.628h-.079L43.444 14H40.14zm10.397-9.958h3.621l1.688 5.713c.082.299.137.66.167 1.08h.07c.047-.403.117-.758.21-1.063l1.732-5.73h3.507l-3.937 10.59c-.504 1.348-1.124 2.3-1.86 2.857-.735.557-1.694.835-2.878.835-.457 0-.925-.05-1.406-.15v-2.697c.31.07.665.105 1.064.105.304 0 .57-.059.8-.176a1.82 1.82 0 0 0 .597-.496c.17-.214.352-.564.545-1.05l-3.92-9.818zM66.34 14h-3.42V1.15h7.595v2.787H66.34v2.452h3.85v2.786h-3.85V14zm15.592-5.001c0 1.629-.438 2.899-1.314 3.81-.876.911-2.102 1.367-3.679 1.367-1.511 0-2.714-.466-3.607-1.398-.894-.931-1.34-2.191-1.34-3.779 0-1.623.437-2.884 1.313-3.784.876-.9 2.105-1.349 3.687-1.349.979 0 1.843.208 2.593.624a4.26 4.26 0 0 1 1.736 1.789c.407.776.61 1.683.61 2.72zm-6.452 0c0 .855.115 1.507.343 1.956.229.448.613.672 1.152.672.533 0 .91-.224 1.129-.672.22-.449.33-1.1.33-1.956 0-.85-.112-1.491-.334-1.925-.223-.433-.604-.65-1.143-.65-.527 0-.905.215-1.134.646-.228.43-.343 1.074-.343 1.929zm14.423-5.133c.3 0 .583.024.853.07l.193.036-.307 3.243c-.282-.07-.671-.106-1.17-.106-.75 0-1.294.172-1.634.515-.34.342-.51.836-.51 1.48V14h-3.436V4.042h2.557l.536 1.59h.167a3.441 3.441 0 0 1 1.2-1.278c.513-.325 1.03-.488 1.551-.488zM104.563 14V8.586c0-.674-.092-1.18-.276-1.516-.185-.337-.476-.506-.875-.506-.527 0-.914.226-1.16.677-.246.451-.37 1.157-.37 2.118V14h-3.444V8.586c0-.674-.088-1.18-.264-1.516-.176-.337-.46-.506-.853-.506-.539 0-.931.24-1.177.721-.247.48-.37 1.266-.37 2.356V14h-3.436V4.042h2.593l.43 1.23h.202a2.569 2.569 0 0 1 1.147-1.045c.501-.24 1.071-.36 1.71-.36 1.435 0 2.443.436 3.023 1.309h.273c.281-.41.672-.731 1.173-.963a3.902 3.902 0 0 1 1.657-.347c1.178 0 2.048.302 2.61.905.563.604.844 1.521.844 2.751V14h-3.437zm13.465-3.059c0 1.067-.363 1.872-1.09 2.417-.726.545-1.769.818-3.128.818-.739 0-1.38-.04-1.925-.119a8.177 8.177 0 0 1-1.67-.435v-2.75a10.34 10.34 0 0 0 1.753.58c.636.152 1.203.228 1.7.228.745 0 1.117-.17 1.117-.51 0-.176-.104-.333-.312-.47-.208-.138-.813-.406-1.815-.804-.914-.375-1.553-.802-1.916-1.28-.363-.477-.545-1.082-.545-1.814 0-.926.358-1.647 1.073-2.162.714-.516 1.725-.774 3.032-.774.656 0 1.273.072 1.85.216a11 11 0 0 1 1.797.628l-.931 2.215c-.457-.205-.94-.38-1.45-.523-.51-.144-.926-.215-1.249-.215-.562 0-.843.137-.843.413 0 .17.098.315.294.435.196.12.763.364 1.7.734.698.287 1.218.568 1.56.843.344.276.595.6.757.971.16.373.241.825.241 1.358zM43.68 28.078c-.279 0-.534-.051-.764-.154a1.436 1.436 0 0 1-.58-.475h-.047c.031.25.047.487.047.711v1.762h-.648v-6.203h.527l.09.586h.03c.168-.235.362-.404.583-.508a1.77 1.77 0 0 1 .762-.156c.567 0 1.006.194 1.314.582.309.388.463.932.463 1.632 0 .704-.157 1.25-.47 1.64-.314.388-.75.583-1.307.583zm-.094-3.887c-.438 0-.754.121-.95.364-.195.242-.295.627-.3 1.156v.144c0 .602.1 1.032.3 1.291.201.26.523.39.966.39.37 0 .66-.15.869-.45.21-.3.314-.712.314-1.238 0-.534-.105-.944-.314-1.229-.21-.285-.505-.428-.885-.428zm6.7 1.664c0 .698-.177 1.243-.528 1.635-.352.392-.837.588-1.457.588a1.93 1.93 0 0 1-1.02-.27 1.779 1.779 0 0 1-.687-.773c-.162-.336-.242-.729-.242-1.18 0-.697.174-1.241.523-1.63.349-.39.833-.584 1.453-.584.6 0 1.075.199 1.428.597.353.399.53.938.53 1.617zm-3.263 0c0 .547.11.964.329 1.25.218.287.54.43.964.43.425 0 .747-.142.967-.428.22-.285.33-.702.33-1.252 0-.544-.11-.957-.33-1.24-.22-.282-.545-.424-.974-.424-.425 0-.745.14-.961.418-.216.279-.325.694-.325 1.246zM54.758 28l-.785-2.512c-.05-.153-.142-.502-.278-1.047h-.03a14.32 14.32 0 0 1-.274 1.055L52.582 28h-.75l-1.168-4.281h.68l.63 2.457c.145.562.228.941.249 1.137h.03c.03-.149.076-.341.14-.577a9.75 9.75 0 0 1 .166-.56l.785-2.457h.703l.766 2.457c.145.448.244.824.296 1.129h.032a4.14 4.14 0 0 1 .084-.434c.045-.195.317-1.246.814-3.152h.672L55.527 28h-.77zm4.535.078c-.633 0-1.132-.193-1.498-.578-.366-.385-.549-.92-.549-1.605 0-.69.17-1.239.51-1.645.34-.406.796-.61 1.369-.61.536 0 .96.177 1.273.53.313.353.47.818.47 1.396v.41h-2.95c.013.503.14.885.38 1.145.242.26.58.39 1.018.39.461 0 .917-.096 1.368-.288v.578c-.23.099-.446.17-.65.213a3.655 3.655 0 0 1-.741.064zm-.176-3.894c-.344 0-.618.112-.822.336-.205.223-.325.533-.361.93h2.238c0-.41-.091-.723-.274-.94-.182-.218-.442-.326-.78-.326zm4.809-.543c.19 0 .36.015.512.047l-.09.601a2.209 2.209 0 0 0-.47-.059c-.345 0-.642.141-.888.422-.246.282-.369.632-.369 1.051V28h-.648v-4.281h.535l.074.793h.031c.16-.279.35-.494.575-.645.223-.15.47-.226.738-.226zm2.96 4.437c-.632 0-1.131-.193-1.497-.578-.366-.385-.55-.92-.55-1.605 0-.69.17-1.239.51-1.645.34-.406.797-.61 1.37-.61.536 0 .96.177 1.273.53.313.353.469.818.469 1.396v.41h-2.95c.014.503.14.885.382 1.145.24.26.58.39 1.017.39.461 0 .917-.096 1.367-.288v.578c-.229.099-.446.17-.65.213a3.655 3.655 0 0 1-.74.064zm-.175-3.894c-.344 0-.618.112-.822.336-.205.223-.325.533-.362.93h2.239c0-.41-.092-.723-.274-.94-.182-.218-.443-.326-.781-.326zm5.77 3.242h-.036c-.3.435-.747.652-1.343.652-.56 0-.996-.191-1.307-.574-.311-.383-.467-.927-.467-1.633s.156-1.254.469-1.644c.312-.391.747-.586 1.305-.586.58 0 1.026.21 1.336.632h.05l-.027-.308-.016-.3v-1.743h.649V28h-.528l-.086-.574zm-1.297.11c.442 0 .763-.121.962-.362.2-.241.3-.63.3-1.166v-.137c0-.607-.102-1.04-.303-1.299-.202-.259-.525-.388-.967-.388-.38 0-.671.147-.873.443-.202.296-.303.713-.303 1.252 0 .547.1.96.3 1.238.201.279.496.418.884.418zm7.355-3.888c.563 0 1 .192 1.31.577.312.384.467.927.467 1.63 0 .704-.156 1.25-.47 1.64-.314.388-.75.583-1.307.583-.279 0-.533-.051-.764-.154a1.436 1.436 0 0 1-.58-.475h-.047l-.136.551h-.465v-6.078h.648v1.476c0 .331-.01.628-.03.891h.03c.302-.427.75-.64 1.344-.64zm-.094.543c-.442 0-.761.127-.957.381-.195.254-.293.682-.293 1.283 0 .602.1 1.032.301 1.291.2.26.522.39.965.39.398 0 .695-.146.89-.436.196-.29.294-.708.294-1.252 0-.558-.098-.973-.293-1.246-.196-.274-.498-.41-.907-.41zm2.164-.472h.696l.937 2.441c.206.557.334.96.383 1.207h.031c.034-.133.105-.36.213-.681.108-.322.462-1.311 1.06-2.967h.696l-1.84 4.875c-.182.482-.395.823-.639 1.025a1.358 1.358 0 0 1-.896.303c-.198 0-.393-.022-.586-.067v-.52c.143.032.303.048.48.048.446 0 .764-.25.954-.75l.238-.61-1.727-4.304zm10.508.234c0 .578-.197 1.023-.592 1.334-.394.311-.959.467-1.693.467h-.672V28h-.664v-5.71h1.48c1.428 0 2.141.554 2.141 1.663zm-2.957 1.23h.598c.588 0 1.014-.094 1.277-.285.263-.19.395-.494.395-.914 0-.377-.124-.658-.371-.843-.248-.185-.633-.278-1.157-.278h-.742v2.32zm8.711-.093c0 .943-.256 1.663-.767 2.162-.512.499-1.249.748-2.21.748h-1.581v-5.71h1.75c.888 0 1.578.245 2.07.737.492.493.738 1.18.738 2.063zm-.703.023c0-.745-.187-1.306-.56-1.683-.374-.378-.93-.567-1.667-.567h-.964v4.563h.808c.792 0 1.387-.195 1.785-.584.399-.39.598-.966.598-1.729zM98.808 28h-.663v-5.71h3.183v.589h-2.52v2.09h2.368v.59h-2.367V28zm5.297-3.777h-1.09V28h-.648v-3.777h-.765v-.293l.765-.235v-.238c0-1.052.46-1.578 1.38-1.578.226 0 .491.045.796.137l-.168.52a2.145 2.145 0 0 0-.64-.122c-.245 0-.426.081-.544.244-.117.163-.175.424-.175.783v.278h1.09v.504zm1.43 3.777h-.648v-4.281h.648V28zm-.703-5.441c0-.149.036-.258.11-.327a.382.382 0 0 1 .273-.103c.104 0 .194.035.27.105.075.07.113.179.113.325 0 .145-.038.254-.114.326a.378.378 0 0 1-.27.107c-.109 0-.2-.036-.273-.107-.073-.072-.109-.18-.109-.326zM107.559 28h-.649v-6.078h.649V28zm2.023 0h-.648v-6.078h.648V28zm3.184.078c-.633 0-1.133-.193-1.498-.578-.366-.385-.55-.92-.55-1.605 0-.69.17-1.239.51-1.645.34-.406.797-.61 1.37-.61.536 0 .96.177 1.273.53.313.353.469.818.469 1.396v.41h-2.95c.014.503.14.885.381 1.145s.58.39 1.018.39c.461 0 .917-.096 1.367-.288v.578c-.229.099-.446.17-.65.213a3.655 3.655 0 0 1-.74.064zm-.176-3.894c-.344 0-.618.112-.822.336-.205.223-.325.533-.362.93h2.239c0-.41-.092-.723-.274-.94-.182-.218-.443-.326-.781-.326zm4.808-.543c.19 0 .361.015.512.047l-.09.601a2.209 2.209 0 0 0-.468-.059c-.347 0-.643.141-.89.422-.245.282-.368.632-.368 1.051V28h-.649v-4.281h.535l.075.793h.03c.16-.279.351-.494.575-.645.224-.15.47-.226.738-.226z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header-nav">
+                    <a class="main-menu__link" href="">Home</a>
+                    <a class="main-menu__link" href="">Upload your document</a>
+                    <a class="main-menu__link" href="">How to sell</a>
+                    <a class="main-menu__link" href="">Contact us</a>
+                </div>
+                </div>
+                </div>
             </div>
-        <div class="sellmyforms">
-                <img src="img/logo-copy.png" alt="">
-                <div class="text_mainspace_2">
-            <a>Earn More
-                By Selling Your Forms and Documents Online</a>
         </div>
-        <div class="img_mainspace1">
-                <img class="img_mainspace" src="img/group-37.png" alt="">
-        
-            </div> 
+        <div class="layout-responsive__body">
+            <section class="page-section page-section--intro" id="home">
+                <div class="page-section__inner">
+                    <h1 class="section-title" style="font-weight: 700;">
+                        <p style="font-weight: 700;">Earn More</p>
+                        
+                        <span class="line-break">By Selling Your Forms and Documents Online</span>
+                    </h1>
+                <div class="section-subtitle-one">
+                    Spend a few minutes publishing your forms online and get paid instantly every time someone downloads your form. NO FEES APPLIED for publishing and selling your forms on SellMyForms.
+                </div>
+                <div class="intro-section-decoration">
+
+                </div>
+                </div>
+            </section>
+            <section class="page-section page-section--uploader">
+                <div class="page-section__inner2">
+                    <div class="uploader-wrapper">
+                        <iframe id="modal-uploader" src="https://www.pdffiller.com/en/functionality/uploader?type=l2s&amp;origin=https://www.sellmyforms.com/&amp;callback=https://www.sellmyforms.com/api/form/index" width="943" height="329" frameborder="0">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section2 page-section--operating-principle" id="how-it-works">
+                <div class="page-section__inner3">
+                    <h2 class="section-title1">Selling Your Forms Is Free And Easy</h2>
+                    <div class="features-widget">
+                        <div class="features-widget__slider">
+                        <div class="features-widget__viewport js-features-widget__viewport slick-initialized slick-slider">
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--benefits">
+                <div class="page-section__inner4">
+                    <h2 class="section-title2">Everything You Need to Securely Publish and Sell Your Forms Online</h2>
+                    <div class="service-benefits">
+                        <div class="service-benefits__item">
+                            <div class="service-benefit">
+                                <div class="service-benefit__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="53" viewBox="0 0 60 53">
+                                    <g fill="none" fill-rule="nonzero">
+                                        <circle cx="21.5" cy="31.5" r="21.5" fill="#E6F0FF"></circle>
+                                        <g transform="translate(14)">
+                                            <path stroke="#484848" stroke-width="2" d="M5 1a4 4 0 0 0-4 4v34a1 1 0 0 0 1 1h42a1 1 0 0 0 1-1V5a4 4 0 0 0-4-4H5z"></path>
+                                            <path fill="#484848" d="M0 6h45v2H0z"></path>
+                                            <g transform="rotate(90 19 22)">
+                                                <path fill="#FFF" d="M0 1h8v8H0z"></path>
+                                                <circle cx="4" cy="5" r="1" fill="#484848"></circle>
+                                                <circle cx="4" cy="9" r="1" fill="#484848"></circle>
+                                                <circle cx="4" cy="1" r="1" fill="#484848"></circle>
+                                            </g>
+                                            <circle cx="5" cy="4" r="1" fill="#484848" stroke="#484848"></circle>
+                                            <circle cx="9" cy="4" r="1" fill="#484848" stroke="#484848"></circle>
+                                            <circle cx="13" cy="4" r="1" fill="#484848" stroke="#484848"></circle>
+                                            <rect width="32" height="9" x="7" y="13" stroke="#484848" stroke-width="2" rx="1"></rect>
+                                            <rect width="8" height="8" x="7" y="26" stroke="#484848" stroke-width="2" rx="1"></rect>
+                                            <rect width="8" height="8" x="19" y="26" stroke="#484848" stroke-width="2" rx="1"></rect>
+                                            <rect width="8" height="8" x="31" y="26" stroke="#484848" stroke-width="2" rx="1"></rect>
+                                            <g transform="rotate(90 -10.5 25.5)">
+                                                <path fill="#E6F0FF" d="M0 1h7v8H0z"></path>
+                                                <circle cx="4" cy="5" r="1" fill="#484848"></circle>
+                                                <circle cx="4" cy="9" r="1" fill="#484848"></circle>
+                                                <circle cx="4" cy="1" r="1" fill="#484848"></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="service-benefit__title">Free web page for your form</div>
+                            <div class="service-benefit__caption">Get a free web page automatically generated for each of your forms. With SellMyForms, you get a web
+                                page that attracts more traffic and sells more forms.</div>
+                            </div>
+                        </div>
+                        <div class="service-benefits__item">
+                            <div class="service-benefit">
+                                <div class="service-benefit__icon"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="53" viewBox="0 0 62 53">
+                                        <g fill="none" fill-rule="nonzero">
+                                            <circle cx="21.5" cy="21.5" r="21.5" fill="#FFF1DE"></circle>
+                                            <rect width="48" height="2" x="14" y="48" fill="#484848" rx="1"></rect>
+                                            <path stroke="#484848" stroke-width="2" d="M20 49h8V38a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v11zM34 49h8V30a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v19zM48 49h8V18a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v31z"></path>
+                                            <g stroke="#484848" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                <path d="M21 27.483l17.5-17.5 4 4 13-12.5M55.5 1.983V6.95M50 1.483h4.967"></path>
+                                            </g>
+                                            <g transform="translate(52 20)">
+                                                <path fill="#FFF" d="M0 1h7v8H0z"></path>
+                                                <circle cx="4" cy="5" r="1" fill="#484848"></circle>
+                                                <circle cx="4" cy="9" r="1" fill="#484848"></circle>
+                                                <circle cx="4" cy="1" r="1" fill="#484848"></circle>
+                                            </g>
+                                            <g transform="rotate(91 -10.136 35.422)">
+                                                <path fill="#FFF" d="M-.017 1h6v8h-6z"></path>
+                                                <circle cx="2.931" cy="5.036" r="1" fill="#484848"></circle>
+                                                <circle cx="3.001" cy="9.035" r="1" fill="#484848"></circle>
+                                                <circle cx="2.861" cy="1.036" r="1" fill="#484848"></circle>
+                                            </g>
+                                            <circle cx="19" cy="30" r="1" fill="#484848"></circle>
+                                        </g>
+                                    </svg></div>
+                                <div class="service-benefit__title">Optimized for search engines</div>
+                                <div class="service-benefit__caption">We use the best SEO strategies to optimize your form’s web page. Anyone Google searching criteria matching the function of your form will find it.</div>
+                            </div>
+                        </div>
+                        <div class="service-benefits__item">
+                            <div class="service-benefit">
+                                <div class="service-benefit__icon"><svg xmlns="http://www.w3.org/2000/svg" width="77" height="58" viewBox="0 0 77 58">
+                                        <g fill="none" fill-rule="nonzero">
+                                            <ellipse cx="22.765" cy="23.093" fill="#FFE2EF" rx="22.765" ry="23.093"></ellipse>
+                                            <path fill="#484848" stroke="#484848" d="M50.792 32.242a4.536 4.536 0 0 0-.392-.015c-.044-.005-4.565-.344-6.375 5.764-1.583 5.34-5.248 5.102-5.442 5.088-.072 0-.145-.002-.218-.005-2.585-.118-4.61-2.29-4.61-4.944 0-2.73 2.166-4.95 4.828-4.95 1.14 0 2.217.406 3.069 1.127.381.322 1.106-.285.692-.652a5.655 5.655 0 0 0-3.761-1.43c-3.176 0-5.76 2.649-5.76 5.905 0 3.167 2.416 5.758 5.5 5.898.086.004.172.006.218.004.005 0 .06.005.155.005.813 0 4.6-.302 6.22-5.768 1.583-5.34 5.25-5.103 5.442-5.089.123 0 .245.005.365.014 2.502.192 4.463 2.36 4.463 4.936 0 2.729-2.166 4.949-4.828 4.949a4.744 4.744 0 0 1-3.274-1.31c-.298-.283-1.04.299-.722.614a5.662 5.662 0 0 0 3.996 1.651c3.176 0 5.76-2.649 5.76-5.904 0-3.074-2.34-5.66-5.326-5.888z"></path>
+                                            <path stroke="#484848" stroke-width="2" d="M24.353 54.852h39.176c6.462 0 11.706-5.32 11.706-11.889 0-6.57-5.244-11.889-11.706-11.889-.101 0-.203.001-.305.004l-.859.022-.15-.846c-1.682-9.42-9.798-16.365-19.333-16.365-9.579 0-17.72 7.009-19.352 16.484l-.124.716-.719.104c-5.727.828-10.04 5.83-10.04 11.77 0 6.57 5.244 11.889 11.706 11.889z"></path>
+                                            <g transform="rotate(90 6.01 56.008)">
+                                                <path fill="#FFF" d="M0 1.074h7.412v8.593H0z"></path>
+                                                <ellipse cx="4.235" cy="5.37" fill="#484848" rx="1.059" ry="1.074"></ellipse>
+                                                <ellipse cx="4.235" cy="9.667" fill="#484848" rx="1.059" ry="1.074"></ellipse>
+                                                <ellipse cx="4.235" cy="1.074" fill="#484848" rx="1.059" ry="1.074"></ellipse>
+                                            </g>
+                                            <ellipse cx="42.353" cy="34.37" fill="#484848" rx="1.059" ry="1.074"></ellipse>
+                                            <ellipse cx="46.588" cy="41.889" fill="#484848" rx="1.059" ry="1.074"></ellipse>
+                                        </g>
+                                    </svg></div>
+                                <div class="service-benefit__title">Unlimited storage</div>
+                                <div class="service-benefit__caption">Upload as many forms as you’d like. SellMyForms provides you with unlimited storage so you can publish and sell more forms.</div>
+                            </div>
+                        </div>
+                        <div class="service-benefits__item">
+                            <div class="service-benefit">
+                                <div class="service-benefit__icon"><svg xmlns="http://www.w3.org/2000/svg" width="74" height="56" viewBox="0 0 74 56">
+                                        <g fill="none" fill-rule="nonzero">
+                                            <ellipse cx="21.213" cy="34" fill="#FADDEA" rx="21.213" ry="21.5"></ellipse>
+                                            <rect width="6.907" height="2" x="35.52" y="32.5" fill="#484848" rx="1"></rect>
+                                            <rect width="46.347" height="32" x="15.8" y="4.5" stroke="#484848" stroke-width="2" rx="4"></rect>
+                                            <path stroke="#484848" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M39.467 36.5h6.075c.624 3.333 1.558 6 2.805 8h-17.76c1.246-2 2.18-4.667 2.804-8h6.076z"></path>
+                                            <path fill="#484848" d="M16.773 29.5H62.16v2H16.773z"></path>
+                                            <rect width="15.76" height="25" x="55.267" y="19.5" fill="#FFF" stroke="#484848" stroke-width="2" rx="4"></rect>
+                                            <path fill="#484848" d="M55.253 37.5H71.04v2H55.253z"></path>
+                                            <rect width="1.973" height="2" x="62.16" y="40.5" fill="#484848" rx=".987"></rect>
+                                            <g transform="rotate(90 15.053 15.6)">
+                                                <path fill="#FFF" d="M0 1h6.907v8H0z"></path>
+                                                <ellipse cx="3.947" cy="5" fill="#484848" rx="1" ry="1"></ellipse>
+                                                <ellipse cx="3.947" cy="9" fill="#484848" rx="1" ry="1"></ellipse>
+                                                <ellipse cx="3.947" cy="1" fill="#484848" rx="1" ry="1"></ellipse>
+                                            </g>
+                                            <g transform="translate(67.093 22.5)">
+                                                <path fill="#FFF" d="M0 1h6.907v8H0z"></path>
+                                                <ellipse cx="3.947" cy="5" fill="#484848" rx="1" ry="1"></ellipse>
+                                                <ellipse cx="3.947" cy="9" fill="#484848" rx="1" ry="1"></ellipse>
+                                                <ellipse cx="3.947" cy="1" fill="#484848" rx="1" ry="1"></ellipse>
+                                            </g>
+                                        </g>
+                                    </svg></div>
+                                <div class="service-benefit__title">Easily distribute your forms</div>
+                                <div class="service-benefit__caption">Simply copy and paste a link to a form or share it with
+                                    your customers, publish it on other websites or social media.</div>
+                            </div>
+                        </div>
+                        <div class="service-benefits__item">
+                            <div class="service-benefit">
+                                <div class="service-benefit__icon"><svg xmlns="http://www.w3.org/2000/svg" width="68" height="49" viewBox="0 0 68 49">
+                                        <g fill="none" fill-rule="nonzero">
+                                            <circle cx="21.5" cy="21.5" r="21.5" fill="#DEF9F0"></circle>
+                                            <path fill="#FFF" d="M16 38h6v8h-6z"></path>
+                                            <g fill="#484848">
+                                                <path d="M50.469 31.469a.997.997 0 1 0 0 1.993.997.997 0 0 0 0-1.993zM28.953 14.535c.55 0 .996-.446.996-.996V9.555a.996.996 0 1 0-1.992 0v3.984c0 .55.446.996.996.996z"></path>
+                                                <path d="M64.016 21.508v-7.969a4.986 4.986 0 0 0-4.98-4.98h-5.579v-5.57A2.992 2.992 0 0 0 50.469 0H31.94a2.992 2.992 0 0 0-2.988 2.988v1.586h-2.988a2.992 2.992 0 0 0-2.988 2.989v.996h-.997a4.986 4.986 0 0 0-4.98 4.98v30.48A4.986 4.986 0 0 0 21.98 49h30.48a4.989 4.989 0 0 0 4.881-3.984h1.694a4.986 4.986 0 0 0 4.98-4.98v-2.59h.997A2.992 2.992 0 0 0 68 34.456v-8.965a3.99 3.99 0 0 0-3.984-3.984zm1.992 3.984c0 1.1-.892 1.992-1.992 1.992V23.5c1.098 0 1.992.894 1.992 1.992zm-6.973-14.941a2.992 2.992 0 0 1 2.988 2.988v13.945h-4.582v-5.976a4.989 4.989 0 0 0-3.984-4.88V10.55h5.578zm-28.09-7.563c0-.55.447-.996.996-.996H50.47c.55 0 .996.447.996.996v13.54h-4.582V7.562a2.992 2.992 0 0 0-2.988-2.989h-12.95V2.988zm9.961 13.54V6.565h2.989c.549 0 .996.447.996.997v8.964h-3.985zm-5.976 0V6.565h3.984v9.961H34.93zm-9.961-8.965c0-.55.446-.997.996-.997h6.973v9.961h-7.97V7.562zM21.98 10.55h.997v5.976h-.783c-1.647 0-3.202-1.192-3.202-2.988a2.992 2.992 0 0 1 2.988-2.988zm30.48 36.457H21.98a2.992 2.992 0 0 1-2.988-2.988V17.462a5.365 5.365 0 0 0 3.202 1.058H52.46a2.992 2.992 0 0 1 2.988 2.988v5.976h-6.972a2.992 2.992 0 0 0-2.989 2.989v3.984a2.992 2.992 0 0 0 2.989 2.988h6.972v6.575a2.992 2.992 0 0 1-2.988 2.988zm9.563-6.973a2.992 2.992 0 0 1-2.988 2.988h-1.594v-5.578h4.582v2.59zm2.989-4.582H48.477a.997.997 0 0 1-.997-.996v-3.984c0-.55.447-.996.997-.996h15.539c.71 0 1.393-.186 1.992-.534v5.514c0 .55-.447.996-.996.996z"></path>
+                                                <path d="M59.035 31.469h-4.582a.996.996 0 1 0 0 1.992h4.582a.996.996 0 1 0 0-1.992z"></path>
+                                            </g>
+                                            <path fill="#FFF" d="M16 38h6v8h-6z"></path>
+                                            <path fill="#DEF9F0" d="M16 42v-4h8v4.948A21.49 21.49 0 0 1 16 42z"></path>
+                                            <circle cx="18" cy="42" r="1" fill="#484848"></circle>
+                                            <circle cx="18" cy="46" r="1" fill="#484848"></circle>
+                                            <circle cx="18" cy="38" r="1" fill="#484848"></circle>
+                                            <path fill="#484848" d="M36 32.064c-1.155 0-2.095-.836-2.095-1.864s.94-1.864 2.095-1.864c1.155 0 2.095.836 2.095 1.864 0 .54.427.979.953.979A.966.966 0 0 0 40 30.2c0-1.794-1.3-3.302-3.048-3.712v-.509A.966.966 0 0 0 36 25a.966.966 0 0 0-.952.979v.51C33.3 26.897 32 28.405 32 30.2c0 2.107 1.794 3.822 4 3.822 1.155 0 2.095.836 2.095 1.864S37.155 37.75 36 37.75c-1.155 0-2.095-.836-2.095-1.864a.966.966 0 0 0-.953-.979.966.966 0 0 0-.952.98c0 1.793 1.3 3.302 3.048 3.711v.423c0 .54.426.979.952.979a.966.966 0 0 0 .952-.979v-.423C38.7 39.188 40 37.68 40 35.886c0-2.107-1.794-3.822-4-3.822z"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="service-benefit__title">Quick payouts</div>
+                                <div class="service-benefit__caption">Get your payments sent directly to
+                                    your account through Stripe, a secure and reliable payment system used by millions of users to receive payments worldwide.</div>
+                            </div>
+                        </div>
+                        <div class="service-benefits__item">
+                            <div class="service-benefit">
+                                <div class="service-benefit__icon"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="53" viewBox="0 0 54 53">
+                                        <g fill="none" fill-rule="nonzero">
+                                            <circle cx="21.5" cy="21.5" r="21.5" fill="#E6F0FF"></circle>
+                                            <path stroke="#484848" stroke-width="2" d="M18 16a2 2 0 0 0-2 2v30a2 2 0 0 0 2 2h30a2 2 0 0 0 2-2V18a2 2 0 0 0-2-2H18z"></path>
+                                            <rect width="6" height="6" x="13" y="13" fill="#E6F0FF" stroke="#484848" stroke-width="2" rx="3"></rect>
+                                            <rect width="6" height="6" x="13" y="46" fill="#FFF" stroke="#484848" stroke-width="2" rx="3"></rect>
+                                            <rect width="6" height="6" x="47" y="13" fill="#FFF" stroke="#484848" stroke-width="2" rx="3"></rect>
+                                            <rect width="6" height="6" x="47" y="46" fill="#FFF" stroke="#484848" stroke-width="2" rx="3"></rect>
+                                            <path fill="#484848" d="M34 40h2a1 1 0 0 1 0 2h-6a1 1 0 0 1 0-2h2V28h-5v1a1 1 0 1 1-2 0v-2a.997.997 0 0 1 1-1h14a.997.997 0 0 1 1 1v2a1 1 0 0 1-2 0v-1h-5v12z"></path>
+                                            <g transform="rotate(90 10 22)">
+                                                <path fill="#E6F0FF" d="M0 1h8v8H0z"></path>
+                                                <circle cx="4" cy="5" r="1" fill="#484848"></circle>
+                                                <circle cx="4" cy="9" r="1" fill="#484848"></circle>
+                                                <circle cx="4" cy="1" r="1" fill="#484848"></circle>
+                                            </g>
+                                        </g>
+                                    </svg></div>
+                                <div class="service-benefit__title">Advanced fillable fields</div>
+                                <div class="service-benefit__caption">Turn any document into an online fillable form with smart fillable fields. Drag and drop signature, text, date, number, and dropdown fields.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--trust">
+                <div class="page-section__inner5">
+                    <div class="security-section-decoration wow fadeIn delay-02s" style="visibility: visible;"></div>
+                    <div class="security-section-description">
+                        <h2 class="section-title3">Make it Easy to Find and Buy Your Forms</h2>
+                        <div class="section-subtitle3">Every day more than 100 thousand professionals visit SellMyForms to find and buy documents for their business needs.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--counters">
+                <div class="page-section__inner6">
+                    <div class="counters">
+                        <div class="counters__item">
+                            <div class="counter counter--forms-uploaded">
+                                <div class="counter__value">
+                                    <div class="counter__value-inner" id="counter-forms-uploaded">1 496</div>
+                                </div>
+                                <div class="counter__caption">people got paid</div>
+                            </div>
+                        </div>
+                        <div class="counters__item">
+                            <div class="counter counter--forms-sold">
+                                <div class="counter__value">
+                                    <div class="counter__value-inner" id="counter-forms-sold">$ 17 544</div>
+                                </div>
+                                <div class="counter__caption">earned and counting</div>
+                            </div>
+                        </div>
+                        <div class="counters__item">
+                            <div class="counter counter--in-earnings">
+                                <div class="counter__value">
+                                    <div class="counter__value-inner" id="counter-in-earnings">2 751</div>
+                                </div>
+                                <div class="counter__caption">forms on sale now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--sell-online-overview">
+                <div class="page-section__inner7">
+                    <div class="decorations-intro-group js-decorations-intro-group--sell-online" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                        <div class="decoration-item decoration-item--oval" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"></div>
+                        <div class="decoration-item decoration-item--line" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"></div>
+                        <div class="decoration-item decoration-item--triangle-1" data-depth="0.015" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"></div>
+                        <div class="decoration-item decoration-item--triangle-2" data-depth="0.025" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"></div>
+                        <div class="decoration-item decoration-item--line-2" data-depth="0.025" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"></div>
+                    </div>
+                    <h2 class="section-title4">Sell Digital Files Online</h2>
+                    <div class="section-subtitle4">Become a seller and make money in no time by joining the e-commerce market</div>
+                    <div class="section-description">
+                        <p>In an age of downloadable goods, millions of digital files are searched for and purchased on a daily basis. Why? Because it’s the most convenient and safest way to sell digital content — applying only to certain platforms — or find the file you need while navigating today’s digital landscape.</p>
+                        <div class="section-description__toggle js-section-description__toggle" style="">
+                            <p>There are plenty of services out there allowing for the distribution of all sorts of digital products and sample documents, including the possibility to publish a digital file or form of your own. The ability to sell files online directly to customers, without a vendor acting as the middle man, is a relatively new solution. However there are some drawbacks, the most common being price, lack of security, and limited options for customization.</p>
+                            <p><strong>SellMyForms</strong> is an online selling platform which meets all compliance and security standards while providing a range of possibilities for customers.</p>
+                            <p>With SellMyForms, you can easily turn documents into digital downloads, distribute them via a URL, or embed them on a web page. Creating a separate website for each form enables customers to find your form using search engines and purchase it online in a matter of minutes.</p>
+                        </div>
+                        <div class="toggle-wrapper">
+                            <div class="toggle-btn js-toggle-btn">
+                                Hide less
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--c2a-publish">
+                <div class="page-section__inner8">
+                    <h2 class="section-title5">Join the growing community of people that use SellMyForms to get paid for their PDF digital downloads</h2>
+                    <a class="button button--md" href="https://sellmyforms.com/#upload">Publish your form</a>
+                </div>
+            </section>
+            <section class="page-section page-section--how-to-sell">
+                <div class="page-section__inner9">
+                    <div class="how-to-sell-wrapper">
+                        <div class="how-to-sell-content">
+                            <h2 class="section-title6">How to Sell Documents Online with SellMyForms?</h2>
+                            <h3 class="section-subtitle6">Sell documents online by following the simple steps below:</h3>
+                            <div class="sell-forms">
+                                <ol class="sell-forms-list">
+                                    <li class="sell-forms-list__item"><span class="brackets-wrapper">1</span>Upload the document you wish to sell.</li>
+                                    <li class="sell-forms-list__item"><span class="brackets-wrapper">2</span>Open your form in the editor and customize its content.</li>
+                                    <li class="sell-forms-list__item"><span class="brackets-wrapper">3</span>Specify the title, description and price of your form.</li>
+                                    <li class="sell-forms-list__item"><span class="brackets-wrapper">4</span>Connect your Stripe payment account.</li>
+                                    <li class="sell-forms-list__item"><span class="brackets-wrapper">5</span>Let SellMyForms automatically generate a web page for your form.</li>
+                                    <li class="sell-forms-list__item"><span class="brackets-wrapper">6</span>Publish your form online.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="how-to-sell-illustrations">
+                                <div class="how-to-sell-image wow fadeIn animated delay-02s animated animated animated" style="visibility: visible;">
+                                <div class="how-to-sell-icon how-to-sell-icon--in wow delay-04s fadeInUp" style="visibility: visible;"></div>
+                                <div class="how-to-sell-icon how-to-sell-icon--fb wow delay-06s fadeInUp" style="visibility: visible;"></div>
+                                <div class="how-to-sell-icon how-to-sell-icon--tw wow delay-08s fadeInU" style="visibility: visible;"></div>
+                                <img class="image" src="https://cdn.mrkhub.com/sellmyforms/54/images/sell/sell-form-illustration--shadow.png" alt="sell-form" srcset="https://cdn.mrkhub.com/sellmyforms/54/images/sell/sell-form-illustration--shadow@2x.png 2x">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--reasons-to-choose">
+                <div class="page-section__inner10">
+                    <div class="description-wrapper">
+                        <h2 class="section-title7">Why do People
+                            Choose SellMyForms?</h2>
+                            <div class="section-subtitle7">All SellMyForms features are designed to ease the process of editing and selling documents online, and are available free of charge within a single service. What’s more, the SellMyForms platform stays ahead of its competitors in terms of security and usability, while allowing you to effortlessly sell your digital products:</div>
+                    </div>
+                        <!--<div class="accordion accordion--benefits" role="tablist">
+                            <div class="accordion__item">
+                                <div class="accordion__title" aria-selected="false">Protect your sensitive data</div>
+                                <div class="accordion__body">
+                                    <p>Protect your sensitive data by enabling two-factor
+                                        authentication or by storing files in password-protected folders.</p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__title" aria-selected="false">Get unlimited storage</div>
+                                <div class="accordion__body">
+                                    <p>Get unlimited storage for your documents,
+                                        a&nbsp;powerful web-based PDF editor for better document customization, and a free SEO-optimized
+                                        web page for each
+                                        <nobr>form you publish.</nobr></p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__title" aria-selected="false">Embed your forms</div>
+                                <div class="accordion__body">
+                                    <p>Embed your forms on external websites by simply&nbsp;copying and
+                                        pasting a link.</p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__title" aria-selected="false">Get paid</div>
+                                <div class="accordion__body">
+                                    <p>Get paid in seconds via Stripe, the most secure and&nbsp;reliable
+                                        online payment service.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>-->
+                <div class="accordion">
+                    <div class="accordion-item active">
+                      <div class="item-header">
+                        <h1 class="title">Protect your sensitive data</h1>
+                        <div class="icon">+</div>
+                      </div>
+                      <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magnam obcaecati atque! Quia ipsum temporibus distinctio amet necessitatibus assumenda tempora, nam rerum eum praesentium ducimus molestiae dicta voluptas consectetur quos.
+                      </p>
+                    </div>
+              
+                    <div class="accordion-item">
+                      <div class="item-header">
+                        <h1 class="title">Get unlimited storage</h1>
+                        <div class="icon">+</div>
+                      </div>
+                      <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magnam obcaecati atque! Quia ipsum temporibus distinctio amet necessitatibus assumenda tempora, nam rerum eum praesentium ducimus molestiae dicta voluptas consectetur quos.
+                      </p>
+                    </div>
+              
+                    <div class="accordion-item">
+                      <div class="item-header">
+                        <h1 class="title">SectionsEmbed your forms</h1>
+                        <div class="icon">+</div>
+                      </div>
+                      <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magnam obcaecati atque! Quia ipsum temporibus distinctio amet necessitatibus assumenda tempora, nam rerum eum praesentium ducimus molestiae dicta voluptas consectetur quos.
+                      </p>
+                    </div>
+              
+                    <div class="accordion-item">
+                      <div class="item-header">
+                        <h1 class="title">Get paid</h1>
+                        <div class="icon">+</div>
+                      </div>
+                      <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magnam obcaecati atque! Quia ipsum temporibus distinctio amet necessitatibus assumenda tempora, nam rerum eum praesentium ducimus molestiae dicta voluptas consectetur quos.
+                      </p>
+                    </div>
+                  </div>
+            </section>
+            <section class="page-section page-section--faq">
+                <div class="page-section__inner102">
+                    <h2 class="section-title102">FAQ</h2>
+                    <div class="accordion--faq2" role="tablist">
+                        <div class="accordion__item">
+                            <div class="accordion__title" aria-selected="false">How do I sell my forms through your platform?</div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__title" aria-selected="false">How do I get paid for my forms?</div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__title" aria-selected="false">Is SellMyForms free?</div>
+                        </div>
+                    </div>
+                    <div class="section-footer2">
+                        <a class="toggle-btn2" href="https://sellmyforms.com/faq">View all questions</a>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--questionnaire">
+                <div class="page-section__inner11">
+                    <div class="questionnaire">
+                        <div class="questionnaire__decoration wow delay-02s" style="visibility: visible;"><svg xmlns="http://www.w3.org/2000/svg" width="146" height="174" viewBox="0 0 146 174">
+                            <g fill="none" fill-rule="evenodd">
+                                <path fill="#78ADFF" d="M120.229 34.32c2.841-.52 4.732-1.344 5.662-2.947 2.755-4.755-3.51-15.389-11.95-19.237-11.767-5.366-28.314 2.213-28.793 8.597-.558 7.429 20.41 16.279 35.08 13.588"></path>
+                                <path fill="#4A8CF4" d="M52.73 24.743C13.515 24.743 0 59.468 0 100.685 0 141.9 13.515 174 52.73 174c39.215 0 92.798-30.031 92.798-71.247s-53.583-78.01-92.798-78.01z"></path>
+                                <path fill="#1657BE" d="M117.313 99.75c0 25.48-20.807 46.137-46.474 46.137-25.667 0-46.474-20.656-46.474-46.137 0-25.482 20.807-46.138 46.474-46.138 25.667 0 46.474 20.656 46.474 46.138"></path>
+                                <path fill="#FFF" d="M113.783 99.75c0 23.545-19.226 42.633-42.944 42.633-23.718 0-42.944-19.088-42.944-42.633 0-23.546 19.226-42.634 42.944-42.634 23.718 0 42.944 19.088 42.944 42.634"></path>
+                                <path fill="#78ADFF" d="M110.253 99.75c0 21.61-17.646 39.13-39.414 39.13s-39.415-17.52-39.415-39.13c0-21.61 17.647-39.13 39.415-39.13s39.414 17.52 39.414 39.13"></path>
+                                <path fill="#FFF" d="M64.253 122.516c.558-2.627 2.733-4.381 5.609-4.381 3.35 0 5.707 2.38 5.707 5.748 0 2.862-1.746 5.025-4.369 5.572-4.661.973-7.93-2.312-6.947-6.94m6.518-49.47c10.423 0 17.537 6.405 17.537 14.863 0 6.446-3.35 11.004-8.645 14.165-5.252 3.08-6.74 5.379-6.74 9.69a2.679 2.679 0 0 1-2.689 2.669h-1.861a2.679 2.679 0 0 1-2.689-2.669v-1.109c-.04-5.42 2.606-9.114 8.272-12.481 4.798-2.915 6.659-5.502 6.659-9.896 0-5.09-3.97-8.827-10.133-8.827-5.327 0-8.999 2.659-10.246 7.084a3.335 3.335 0 0 1-3.206 2.441c-2.44 0-4.2-2.34-3.487-4.657 2.022-6.56 7.735-11.274 17.228-11.274"></path>
+                                <ellipse cx="134.466" cy="50.09" fill-rule="nonzero" stroke="#000" stroke-width=".8" rx="9.012" ry="8.944"></ellipse>
+                                <ellipse cx="10.696" cy="167.868" fill-rule="nonzero" stroke="#000" stroke-width=".8" rx="5.483" ry="5.44"></ellipse>
+                                <ellipse cx="63.888" cy="5.358" fill-rule="nonzero" stroke="#000" stroke-width=".8" rx="4.429" ry="4.394"></ellipse>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="questionnaire__info">
+                        <h2 class="questionnaire__title">Did you know?</h2>
+                        <div class="questionnaire__message">Here’s a fact. The estimated global population currently stands at 7.7 billion people, about 25% of them are potential buyers of downloadable goods. At the same time, the number of people who sell digital files online increases by the day, with over 14% of total retail sales coming from e-commerce. Considering the consistent rise of ecommerce in the global marketplace, avoiding online sales will only amount to an inevitable loss of revenue.</div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section page-section--easy-joining">
+                <div class="page-section__inner12">
+                    <div class="decorations-intro-group2 js-decoration-action-group-join2" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                        <div class="decoration-item decoration-item--line32" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"></div>
+                        <div class="decoration-item decoration-item--triangle2" data-depth="0.015" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"></div>
+                        <div class="decoration-item decoration-item--line-22" data-depth="0.015" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"></div>
+                    </div>
+                    <h2 class="section-title8">Joining is Easy</h2>
+                    <div class="section-subtitle8">More and more consumers prefer to use standard document templates — such as contracts, agreements, rental and eviction documents, vendor and application forms, etc. — for their corporate and private needs rather than creating them from scratch. The SellMyForms platform is a legal and simple way to join the movement and start earning today.</div>
+                </div>
+            </section>
+            <section class="page-section page-section--cta">
+                <div class="page-section__inner13">
+                    <div class="cta-panel">
+                        <div class="page-section__flexible-wrapper">
+                            <h2 class="section-title9">Start earning on your forms NOW!</h2>
+                            <a href="https://sellmyforms.com/#upload" class="button2 button--lg">Publish your form</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="layout-responsive__footer">
+            <div class="page-footer" role="nav">
+                <div class="page-footer__row page-footer__row--primary">
+                    <div class="page-footer__row-inner">
+                        <div class="page-footer__column">
+            <a class="footer-logo" href="https://sellmyforms.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="118" height="30" viewBox="0 0 118 30">
+                    <g fill="none">
+                        <path fill="#FFF" d="M9.791 10.098c0 .797-.202 1.504-.606 2.122-.405.618-.988 1.099-1.75 1.442-.761.342-1.655.514-2.68.514-.856 0-1.573-.06-2.153-.18a7.994 7.994 0 0 1-1.811-.629v-3.094c.662.34 1.35.605 2.065.796.715.19 1.372.285 1.97.285.515 0 .893-.089 1.133-.268a.824.824 0 0 0 .36-.69.76.76 0 0 0-.145-.46 1.689 1.689 0 0 0-.466-.4C5.495 9.4 4.925 9.124 4 8.708c-.838-.38-1.466-.75-1.885-1.107a3.4 3.4 0 0 1-.932-1.23C.98 5.907.88 5.36.88 4.727c0-1.184.43-2.107 1.292-2.769.861-.662 2.045-.993 3.55-.993 1.33 0 2.687.307 4.07.923l-1.063 2.68c-1.202-.55-2.239-.826-3.112-.826-.451 0-.78.08-.984.237-.205.159-.308.355-.308.59 0 .251.13.477.391.676.261.2.969.563 2.123 1.09 1.107.498 1.876 1.033 2.307 1.604.43.571.646 1.29.646 2.158zm6.592 4.078c-1.658 0-2.946-.441-3.863-1.323-.917-.882-1.375-2.137-1.375-3.766 0-1.682.424-2.972 1.274-3.872.85-.9 2.062-1.349 3.639-1.349 1.5 0 2.658.391 3.476 1.174.817.782 1.226 1.908 1.226 3.379v1.53h-6.144c.024.556.227.992.611 1.309.384.316.907.474 1.569.474.603 0 1.159-.057 1.665-.171a8.25 8.25 0 0 0 1.648-.584v2.47a6.063 6.063 0 0 1-1.67.57c-.574.106-1.26.159-2.056.159zm-.202-7.972c-.405 0-.743.128-1.015.382-.273.255-.433.655-.48 1.2h2.954c-.012-.48-.148-.864-.409-1.151-.26-.287-.61-.43-1.05-.43zM26.139 14h-3.437V.324h3.437V14zm5.818 0h-3.436V.324h3.436V14z"></path>
+                        <path fill="#C4DBFF" d="M40.14 14l-2.628-9.255h-.08c.124 1.576.185 2.8.185 3.674V14h-3.076V1.15h4.623l2.68 9.123h.071l2.628-9.123h4.632V14h-3.19V8.366c0-.293.004-.618.013-.975.008-.358.048-1.234.118-2.628h-.079L43.444 14H40.14zm10.397-9.958h3.621l1.688 5.713c.082.299.137.66.167 1.08h.07c.047-.403.117-.758.21-1.063l1.732-5.73h3.507l-3.937 10.59c-.504 1.348-1.124 2.3-1.86 2.857-.735.557-1.694.835-2.878.835-.457 0-.925-.05-1.406-.15v-2.697c.31.07.665.105 1.064.105.304 0 .57-.059.8-.176a1.82 1.82 0 0 0 .597-.496c.17-.214.352-.564.545-1.05l-3.92-9.818zM66.34 14h-3.42V1.15h7.595v2.787H66.34v2.452h3.85v2.786h-3.85V14zm15.592-5.001c0 1.629-.438 2.899-1.314 3.81-.876.911-2.102 1.367-3.679 1.367-1.511 0-2.714-.466-3.607-1.398-.894-.931-1.34-2.191-1.34-3.779 0-1.623.437-2.884 1.313-3.784.876-.9 2.105-1.349 3.687-1.349.979 0 1.843.208 2.593.624a4.26 4.26 0 0 1 1.736 1.789c.407.776.61 1.683.61 2.72zm-6.452 0c0 .855.115 1.507.343 1.956.229.448.613.672 1.152.672.533 0 .91-.224 1.129-.672.22-.449.33-1.1.33-1.956 0-.85-.112-1.491-.334-1.925-.223-.433-.604-.65-1.143-.65-.527 0-.905.215-1.134.646-.228.43-.343 1.074-.343 1.929zm14.423-5.133c.3 0 .583.024.853.07l.193.036-.307 3.243c-.282-.07-.671-.106-1.17-.106-.75 0-1.294.172-1.634.515-.34.342-.51.836-.51 1.48V14h-3.436V4.042h2.557l.536 1.59h.167a3.441 3.441 0 0 1 1.2-1.278c.513-.325 1.03-.488 1.551-.488zM104.563 14V8.586c0-.674-.092-1.18-.276-1.516-.185-.337-.476-.506-.875-.506-.527 0-.914.226-1.16.677-.246.451-.37 1.157-.37 2.118V14h-3.444V8.586c0-.674-.088-1.18-.264-1.516-.176-.337-.46-.506-.853-.506-.539 0-.931.24-1.177.721-.247.48-.37 1.266-.37 2.356V14h-3.436V4.042h2.593l.43 1.23h.202a2.569 2.569 0 0 1 1.147-1.045c.501-.24 1.071-.36 1.71-.36 1.435 0 2.443.436 3.023 1.309h.273c.281-.41.672-.731 1.173-.963a3.902 3.902 0 0 1 1.657-.347c1.178 0 2.048.302 2.61.905.563.604.844 1.521.844 2.751V14h-3.437zm13.465-3.059c0 1.067-.363 1.872-1.09 2.417-.726.545-1.769.818-3.128.818-.739 0-1.38-.04-1.925-.119a8.177 8.177 0 0 1-1.67-.435v-2.75a10.34 10.34 0 0 0 1.753.58c.636.152 1.203.228 1.7.228.745 0 1.117-.17 1.117-.51 0-.176-.104-.333-.312-.47-.208-.138-.813-.406-1.815-.804-.914-.375-1.553-.802-1.916-1.28-.363-.477-.545-1.082-.545-1.814 0-.926.358-1.647 1.073-2.162.714-.516 1.725-.774 3.032-.774.656 0 1.273.072 1.85.216a11 11 0 0 1 1.797.628l-.931 2.215c-.457-.205-.94-.38-1.45-.523-.51-.144-.926-.215-1.249-.215-.562 0-.843.137-.843.413 0 .17.098.315.294.435.196.12.763.364 1.7.734.698.287 1.218.568 1.56.843.344.276.595.6.757.971.16.373.241.825.241 1.358zM43.68 28.078c-.279 0-.534-.051-.764-.154a1.436 1.436 0 0 1-.58-.475h-.047c.031.25.047.487.047.711v1.762h-.648v-6.203h.527l.09.586h.03c.168-.235.362-.404.583-.508a1.77 1.77 0 0 1 .762-.156c.567 0 1.006.194 1.314.582.309.388.463.932.463 1.632 0 .704-.157 1.25-.47 1.64-.314.388-.75.583-1.307.583zm-.094-3.887c-.438 0-.754.121-.95.364-.195.242-.295.627-.3 1.156v.144c0 .602.1 1.032.3 1.291.201.26.523.39.966.39.37 0 .66-.15.869-.45.21-.3.314-.712.314-1.238 0-.534-.105-.944-.314-1.229-.21-.285-.505-.428-.885-.428zm6.7 1.664c0 .698-.177 1.243-.528 1.635-.352.392-.837.588-1.457.588a1.93 1.93 0 0 1-1.02-.27 1.779 1.779 0 0 1-.687-.773c-.162-.336-.242-.729-.242-1.18 0-.697.174-1.241.523-1.63.349-.39.833-.584 1.453-.584.6 0 1.075.199 1.428.597.353.399.53.938.53 1.617zm-3.263 0c0 .547.11.964.329 1.25.218.287.54.43.964.43.425 0 .747-.142.967-.428.22-.285.33-.702.33-1.252 0-.544-.11-.957-.33-1.24-.22-.282-.545-.424-.974-.424-.425 0-.745.14-.961.418-.216.279-.325.694-.325 1.246zM54.758 28l-.785-2.512c-.05-.153-.142-.502-.278-1.047h-.03a14.32 14.32 0 0 1-.274 1.055L52.582 28h-.75l-1.168-4.281h.68l.63 2.457c.145.562.228.941.249 1.137h.03c.03-.149.076-.341.14-.577a9.75 9.75 0 0 1 .166-.56l.785-2.457h.703l.766 2.457c.145.448.244.824.296 1.129h.032a4.14 4.14 0 0 1 .084-.434c.045-.195.317-1.246.814-3.152h.672L55.527 28h-.77zm4.535.078c-.633 0-1.132-.193-1.498-.578-.366-.385-.549-.92-.549-1.605 0-.69.17-1.239.51-1.645.34-.406.796-.61 1.369-.61.536 0 .96.177 1.273.53.313.353.47.818.47 1.396v.41h-2.95c.013.503.14.885.38 1.145.242.26.58.39 1.018.39.461 0 .917-.096 1.368-.288v.578c-.23.099-.446.17-.65.213a3.655 3.655 0 0 1-.741.064zm-.176-3.894c-.344 0-.618.112-.822.336-.205.223-.325.533-.361.93h2.238c0-.41-.091-.723-.274-.94-.182-.218-.442-.326-.78-.326zm4.809-.543c.19 0 .36.015.512.047l-.09.601a2.209 2.209 0 0 0-.47-.059c-.345 0-.642.141-.888.422-.246.282-.369.632-.369 1.051V28h-.648v-4.281h.535l.074.793h.031c.16-.279.35-.494.575-.645.223-.15.47-.226.738-.226zm2.96 4.437c-.632 0-1.131-.193-1.497-.578-.366-.385-.55-.92-.55-1.605 0-.69.17-1.239.51-1.645.34-.406.797-.61 1.37-.61.536 0 .96.177 1.273.53.313.353.469.818.469 1.396v.41h-2.95c.014.503.14.885.382 1.145.24.26.58.39 1.017.39.461 0 .917-.096 1.367-.288v.578c-.229.099-.446.17-.65.213a3.655 3.655 0 0 1-.74.064zm-.175-3.894c-.344 0-.618.112-.822.336-.205.223-.325.533-.362.93h2.239c0-.41-.092-.723-.274-.94-.182-.218-.443-.326-.781-.326zm5.77 3.242h-.036c-.3.435-.747.652-1.343.652-.56 0-.996-.191-1.307-.574-.311-.383-.467-.927-.467-1.633s.156-1.254.469-1.644c.312-.391.747-.586 1.305-.586.58 0 1.026.21 1.336.632h.05l-.027-.308-.016-.3v-1.743h.649V28h-.528l-.086-.574zm-1.297.11c.442 0 .763-.121.962-.362.2-.241.3-.63.3-1.166v-.137c0-.607-.102-1.04-.303-1.299-.202-.259-.525-.388-.967-.388-.38 0-.671.147-.873.443-.202.296-.303.713-.303 1.252 0 .547.1.96.3 1.238.201.279.496.418.884.418zm7.355-3.888c.563 0 1 .192 1.31.577.312.384.467.927.467 1.63 0 .704-.156 1.25-.47 1.64-.314.388-.75.583-1.307.583-.279 0-.533-.051-.764-.154a1.436 1.436 0 0 1-.58-.475h-.047l-.136.551h-.465v-6.078h.648v1.476c0 .331-.01.628-.03.891h.03c.302-.427.75-.64 1.344-.64zm-.094.543c-.442 0-.761.127-.957.381-.195.254-.293.682-.293 1.283 0 .602.1 1.032.301 1.291.2.26.522.39.965.39.398 0 .695-.146.89-.436.196-.29.294-.708.294-1.252 0-.558-.098-.973-.293-1.246-.196-.274-.498-.41-.907-.41zm2.164-.472h.696l.937 2.441c.206.557.334.96.383 1.207h.031c.034-.133.105-.36.213-.681.108-.322.462-1.311 1.06-2.967h.696l-1.84 4.875c-.182.482-.395.823-.639 1.025a1.358 1.358 0 0 1-.896.303c-.198 0-.393-.022-.586-.067v-.52c.143.032.303.048.48.048.446 0 .764-.25.954-.75l.238-.61-1.727-4.304zm10.508.234c0 .578-.197 1.023-.592 1.334-.394.311-.959.467-1.693.467h-.672V28h-.664v-5.71h1.48c1.428 0 2.141.554 2.141 1.663zm-2.957 1.23h.598c.588 0 1.014-.094 1.277-.285.263-.19.395-.494.395-.914 0-.377-.124-.658-.371-.843-.248-.185-.633-.278-1.157-.278h-.742v2.32zm8.711-.093c0 .943-.256 1.663-.767 2.162-.512.499-1.249.748-2.21.748h-1.581v-5.71h1.75c.888 0 1.578.245 2.07.737.492.493.738 1.18.738 2.063zm-.703.023c0-.745-.187-1.306-.56-1.683-.374-.378-.93-.567-1.667-.567h-.964v4.563h.808c.792 0 1.387-.195 1.785-.584.399-.39.598-.966.598-1.729zM98.808 28h-.663v-5.71h3.183v.589h-2.52v2.09h2.368v.59h-2.367V28zm5.297-3.777h-1.09V28h-.648v-3.777h-.765v-.293l.765-.235v-.238c0-1.052.46-1.578 1.38-1.578.226 0 .491.045.796.137l-.168.52a2.145 2.145 0 0 0-.64-.122c-.245 0-.426.081-.544.244-.117.163-.175.424-.175.783v.278h1.09v.504zm1.43 3.777h-.648v-4.281h.648V28zm-.703-5.441c0-.149.036-.258.11-.327a.382.382 0 0 1 .273-.103c.104 0 .194.035.27.105.075.07.113.179.113.325 0 .145-.038.254-.114.326a.378.378 0 0 1-.27.107c-.109 0-.2-.036-.273-.107-.073-.072-.109-.18-.109-.326zM107.559 28h-.649v-6.078h.649V28zm2.023 0h-.648v-6.078h.648V28zm3.184.078c-.633 0-1.133-.193-1.498-.578-.366-.385-.55-.92-.55-1.605 0-.69.17-1.239.51-1.645.34-.406.797-.61 1.37-.61.536 0 .96.177 1.273.53.313.353.469.818.469 1.396v.41h-2.95c.014.503.14.885.381 1.145s.58.39 1.018.39c.461 0 .917-.096 1.367-.288v.578c-.229.099-.446.17-.65.213a3.655 3.655 0 0 1-.74.064zm-.176-3.894c-.344 0-.618.112-.822.336-.205.223-.325.533-.362.93h2.239c0-.41-.092-.723-.274-.94-.182-.218-.443-.326-.781-.326zm4.808-.543c.19 0 .361.015.512.047l-.09.601a2.209 2.209 0 0 0-.468-.059c-.347 0-.643.141-.89.422-.245.282-.368.632-.368 1.051V28h-.649v-4.281h.535l.075.793h.03c.16-.279.351-.494.575-.645.224-.15.47-.226.738-.226z"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="page-footer__column1">
+            <a href="https://sellmyforms.com/categories" class="footer-menu-title">Document &amp; Resource Categories</a>
+            <div class="page-footer__subcolumns">
+                <div class="page-footer__subcolumn1">
+                    <ul class="footer-menu">
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/agriculture-forestry-fishing-and-hunting/agriculture" role="link">Agriculture</a></li>
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/construction/building-construction" role="link">Building Construction</a></li>
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/agriculture-forestry-fishing-and-hunting/forestry" role="link">Forestry</a></li>
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/mining-quarrying-oil-and-gas-extraction/mining" role="link">Mining</a></li>
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/manufacturing/textile" role="link">Textile</a></li>
+                                    </ul>
+                </div>
+                <div class="page-footer__subcolumn2">
+                    <ul class="footer-menu">
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/finance-insurance-and-law/accounting" role="link">Accounting</a></li>
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/marketing-digital-and-design/advertising" role="link">Advertising</a></li>
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/trade-and-commerce/e-commerce" role="link">E-commerce</a></li>
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/finance-insurance-and-law/insurance" role="link">Insurance</a></li>
+                                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/category/real-estate-rental-and-leasing/real-estate" role="link">Real Estate</a></li>
+                                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer__column2">
+            <div class="footer-menu-title">Community</div>
+            <ul class="footer-menu">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/about-us" role="link" rel="nofollow">About us</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/sell-pdf" role="link">Sell PDFs</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/faq" role="link" rel="nofollow">FAQ</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/contact-us" rel="nofollow" role="link">Contact Us</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="https://blog.sellmyforms.com/" role="link">Blog</a></li>
+            </ul>
+        </div>
+        <div class="page-footer__column3">
+            <div class="footer-menu-title">Support</div>
+            <ul class="footer-menu">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="https://sellmyforms.com/how-to-sell" role="link">How it works</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="/terms" role="link" rel="nofollow">Terms &amp; Conditions</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="/privacy-policy" role="link" rel="nofollow">Privacy Policy</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="/dmca" role="link" rel="nofollow">DMCA</a></li>
+            </ul>
+        </div>
+        <div class="page-footer__column4">
+    <div class="footer-menu-title">PDFfiller</div>
+    <ul class="footer-menu">
+        <li class="footer-menu__item"><a class="footer-menu__link" href="https://www.pdffiller.com/" role="link">pdffiller.com</a></li>
+        <li class="footer-menu__item"><a class="footer-menu__link" href="https://www.uslegalforms.com/" role="link">uslegalforms.com</a></li>
+        <li class="footer-menu__item"><a class="footer-menu__link" href="https://www.signnow.com/" role="link">Electronic Signature</a></li>
+        <li class="footer-menu__item"><a class="footer-menu__link" href="https://airslatepdf.com/" role="link">airslatepdf.com</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="https://altopdf.com/" rel="nofollow" role="link">AltoPDF.com</a></li>
+                            <li class="footer-menu__item"><a class="footer-menu__link" href="https://www.airslate.com/workflows" role="link">airSlate workflows</a></li>
+            </ul>
+</div>
+                    </div>
+                </div>
+                <div class="page-footer__row page-footer__row--secondary">
+                    <div class="page-footer__row-inner2">
+                        <div class="footer-copyright">© 2006-2020 airSlate Inc. All rights reserved.</div>
+                        <div class="page-footer__social">
+                            <div class="page-footer-social__item">
+                                <a class="page-footer-social__link" href="https://www.facebook.com/Sell-My-Forms-2393083847642710">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16">
+                                        <path fill="#FFF" fill-rule="nonzero" d="M7.699.003L5.779 0C3.625 0 2.232 1.546 2.232 3.938v1.815H.301C.136 5.753 0 5.9 0 6.08v2.63c0 .18.135.326.302.326H2.23v6.638c0 .18.135.326.302.326H5.05c.167 0 .302-.146.302-.326V9.036h2.255c.167 0 .302-.146.302-.326l.001-2.63a.34.34 0 0 0-.088-.231.29.29 0 0 0-.214-.096H5.352V4.214c0-.74.163-1.115 1.054-1.115h1.292c.167 0 .302-.147.302-.327V.33c0-.18-.135-.326-.301-.327z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="page-footer-social__item">
+                                <a class="page-footer-social__link" href="https://www.linkedin.com/in/lars-guldborg-1924a2159/">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 8.583V14h-3V8.946c0-1.27-.435-2.136-1.52-2.136-.83 0-1.323.584-1.54 1.149-.08.202-.1.483-.1.766V14H4.838s.04-8.56 0-9.446H7.84v1.339l-.02.03h.02v-.03c.399-.643 1.11-1.561 2.705-1.561C12.52 4.332 14 5.682 14 8.583zM1.699 0C.672 0 0 .705 0 1.632c0 .907.652 1.633 1.659 1.633h.02c1.046 0 1.697-.726 1.697-1.633C3.356.705 2.726 0 1.7 0zM.179 14h3V4.554h-3V14z" fill="#FFF" fill-rule="nonzero"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(".item-header").click(function(){
+          $(".accordion-item").removeClass("active");
+          $(this).parent().addClass("active");
+          $(".icon").text("+");
+          $(this).children(".icon").text("-");
+        });
+      </script>
 </body>
 </html>

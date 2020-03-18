@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 61.2 (101010) - https://sketch.com -->
+    <title>CB101AC1-BC77-438A-ADFD-B1EB6854ADD3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0DAEFF" offset="0%"></stop>
+            <stop stop-color="#005BDF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="90" height="90" rx="16"></rect>
+        <filter x="-55.6%" y="-44.4%" width="211.1%" height="211.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DocStock-Main-Page-CEO-Copy-4" transform="translate(-940.000000, -3453.000000)">
+            <g id="Group-7" transform="translate(672.000000, 3413.000000)">
+                <g id="Group-5" transform="translate(298.000000, 60.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Rectangle-Copy-11">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="facebook-app-symbol" mask="url(#mask-3)" fill="#FFFFFF" fill-rule="nonzero">
+                        <g transform="translate(28.000000, 21.000000)" id="f_1_">
+                            <path d="M23.369009,70 L23.369009,38.0720515 L33.9787733,38.0720515 L35.5705508,25.6254714 L23.369009,25.6254714 L23.369009,17.6801449 C23.369009,14.0776981 24.3557144,11.6226739 29.4778237,11.6226739 L36,11.6199666 L36,0.487304933 C34.8720813,0.33930862 31.0003352,0 26.494023,0 C17.0841247,0 10.6419394,5.79937991 10.6419394,16.4474439 L10.6419394,25.6254714 L0,25.6254714 L0,38.0720515 L10.6419394,38.0720515 L10.6419394,70 L23.369009,70 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
