@@ -187,7 +187,7 @@ a.main-menu__link:before {
     position: relative;
     background: #05234f;
 }
-@media only screen and (min-width: 980px)
+@media only screen and (min-width: 980px) {
 .page-section--intro .page-section__inner {
     position: relative;
     padding-top: 55px;
@@ -203,7 +203,8 @@ a.main-menu__link:before {
     padding-left: 20px;
     margin: 0 auto;
 }
-@media only screen and (min-width: 980px)
+}
+@media only screen and (min-width: 980px) {
 .page-section--intro .section-title {
     margin-bottom: 12px;
     max-width: 520px;
@@ -228,7 +229,8 @@ span.line-break{
     width: 520px;
     height: 94px;
 }
-@media only screen and (min-width: 980px)
+}
+@media only screen and (min-width: 980px) {
 .page-section--intro .section-subtitle {
     max-width: 496px;
     font-size: 18px;
@@ -237,7 +239,7 @@ span.line-break{
 .section-subtitle-one {
     width: 496px;
     height: 128px;
-    font-family: "OpenSans";
+    font-family: "OpenSans", sans-serif;
     font-size: 18px;
     line-height: 1.78;
     color: #ffffff;
@@ -245,6 +247,7 @@ span.line-break{
     text-align: left;
     position: relative;
     z-index: 4;
+}
 }
 @media only screen and (min-width: 980px)
 .intro-section-decoration {
