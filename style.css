@@ -1130,16 +1130,18 @@ strong {
     transform: rotate(-90deg);
 }
 .page-section--reasons-to-choose .accordion__title2::before {
-    right: 16px;
+    right: 200px;
     width: 20px;
     height: 2px;
     opacity: 1;
+    margin-top: 14px;
 }
 .page-section--reasons-to-choose .accordion__title2:after {
-    right: 25px;
+    right: 209px;
     width: 2px;
     height: 20px;
-    margin-top: -9px;
+    margin-top: 5px;
+    
 }
 .page-section--reasons-to-choose .accordion__title2:after {
     position: absolute;
