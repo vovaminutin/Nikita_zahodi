@@ -61,18 +61,35 @@ nav{
     cursor: pointer;
 }
 .header-nav a::before{
-    width: 100%;
-    background-color: #ff9e20;
+    position: absolute;
     right: 0;
     bottom: -5px;
+    width: 0;
     height: 3px;
     border-radius: 3px;
+    background-color: transparent;
     content: "";
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-out;
     transition-duration: .45s;
     transition-property: width,background-color;
 }
-
+.main-menu__item.is-active .main-menu__link:before, .main-menu__item.is-active a.main-menu__link:before {
+    width: 100%;
+    background-color: #ff9e20;
+}
+a.main-menu__link:before {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    border-radius: 3px;
+    background-color: transparent;
+    content: "";
+    transition-timing-function: ease-out;
+    transition-duration: .45s;
+    transition-property: width,background-color;
+}
 .header-nav a:first-child{
     position: relative;
     margin: 8px 13px;
@@ -667,6 +684,16 @@ span.line-break{
     z-index: 1;
     overflow: hidden;
 }
+.decoration-item--oval {
+    top: auto!important;
+    left: -20px!important;
+    bottom: 70px!important;
+    width: 92px;
+    height: 188px;
+    background-image: url(img/oval-overview.svg);
+    position: absolute!important;
+    background-size: cover;
+}
 .decoration-item--line {
     z-index: 0;
     left: 87px!important;
@@ -682,6 +709,14 @@ span.line-break{
     width: 41px;
     height: 41px;
     background-image: url(img/triangle-copy-8.png)
+}
+.decoration-item--triangle-2 {
+    right: 87px!important;
+    top: 137px!important;
+    width: 41px;
+    height: 41px;
+    left: auto!important;
+    background-image: url(img/triangle-overview-2.png);
 }
 .decoration-item--line-2 {
     bottom: 82px!important;
@@ -789,14 +824,12 @@ strong {
     color: #fff
 }
 .button--md {
-    width: 211.44px;
-    height: 46px;
+    width: 145.44px;
+    height: 16px;
     margin: auto;
     padding: 13px 33px;
     position: relative;
     z-index: 2;
-    background-color:rgb(255, 144, 0);
-    border-radius: 4px;
     border: 1px solid #ff9000;
     border-radius: 4px;
     background-color: #ff9000;
@@ -816,8 +849,93 @@ strong {
     -webkit-font-smoothing: antialiased;
     -webkit-appearance: none;
 }
+.button--md {
+    font-size: 16px;
+    line-height: 18px;
+}
 .button--md:hover {
     background-color: #ff9e20;
+}
+.page-section--c2a-publish .decorations-intro-group {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+.page-section--c2a-publish .decoration-item {
+    position: absolute!important;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.page-section--c2a-publish .decoration-item--oval-6 {
+    top: 36px!important;
+    left: 110px!important;
+    width: 83px;
+    height: 86px;
+    background-image: url(img/oval-c2a.png);
+    position: absolute!important;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.decoration-item--oval-line-6 {
+    width: 164px;
+    height: 170px;
+    bottom: 40px!important;
+    right: -34px!important;
+    left: auto!important;
+    top: auto!important;
+    background-image: url(img/oval-cta-line-2.svg);
+}
+.decoration-item--oval-66 {
+    bottom: 54px!important;
+    right: -26px!important;
+    width: 162px;
+    height: 168px;
+    top: auto!important;
+    left: auto!important;
+    background-image: url(img/oval-cta-2.png);
+}
+.decoration-item--triangle-line-6 {
+    bottom: 10px!important;
+    left: 392px!important;
+    width: 39px;
+    height: 43px;
+    top: auto!important;
+    background-image: url(img/triangle-green-line.svg);
+}
+.decoration-item--triangle-6 {
+    bottom: 24px!important;
+    left: 396px!important;
+    width: 37px;
+    height: 43px;
+    top: auto!important;
+    background-image: url(img/triangle-green.png);
+}
+.page-section--c2a-publish .decoration-item--triangle-line-66 {
+    top: -8px!important;
+    right: 264px!important;
+    width: 41px;
+    height: 41px;
+    left: auto!important;
+    background-image: url(img/triangle-orange-line.svg);
+}
+.decoration-item--triangle-66 {
+    top: -20px!important;
+    right: 260px!important;
+    width: 41px;
+    height: 41px;
+    left: auto!important;
+    background-image: url(img/triangle-orange.png);
+}
+.decoration-item--line6 {
+    left: -34px!important;
+    bottom: -44px!important;
+    top: auto!important;
+    width: 150px;
+    height: 126px;
+    background-image: url(img/line-cta.png);
 }
 .page-section--how-to-sell{
     width: 1263px;
@@ -920,7 +1038,7 @@ strong {
     top: -160px;
     left: 130px;
     border-radius: 12px;
-    background: url(img/group-22.svg) no-repeat;
+    background: url(img/linkedin-content-icon.svg) no-repeat;
     background-size: contain;
 }
 .page-section--how-to-sell .how-to-sell-illustrations .how-to-sell-icon--fb {
@@ -930,7 +1048,7 @@ strong {
     top: -107px;
     right: 40px;
     border-radius: 12px;
-    background: url(img/group-5.svg) no-repeat;
+    background: url(img/facebook-content-icon.svg) no-repeat;
     background-size: contain;
 }
 .page-section--how-to-sell .how-to-sell-illustrations .how-to-sell-icon--tw {
@@ -939,7 +1057,7 @@ strong {
     top: -4px;
     left: 104px;
     border-radius: 14px;
-    background: url(img/group-17.svg) no-repeat;
+    background: url(img/twitter-content-icon.svg) no-repeat;
     background-size: contain;
 }
 .page-section--reasons-to-choose{
@@ -947,7 +1065,7 @@ strong {
     height: 320px;
 }
 .page-section__inner10{
-    width: 980px;
+    width: 940px;
     height: 270px;
     padding-bottom: 50px;
     padding-left: 20px;
@@ -985,15 +1103,60 @@ strong {
     margin-left: 32px;
 }
 
-.item-header{
-    padding: 14px 6px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+.accordion__item2 {
+    width: 440px;
+    height: 52px;
+    margin-bottom: 12px;
+    border-bottom: 0;
+    background-color: #f9fcff;
+
+}
+.accordion__title2 {
     padding: 12px 50px 12px 20px;
     font-size: 18px;
     line-height: 1.56;
+    color: #484848;
+    margin: 0;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 700;
+}
+.page-section--reasons-to-choose .accordion__title2::before {
+    position: absolute;
+    content: "";
+    left: auto;
+    background: #ff9e20;
+    border: 0;
+    transition: all .2s ease-in-out;
+    transform: rotate(-90deg);
+}
+.page-section--reasons-to-choose .accordion__title2::before {
+    right: 16px;
+    width: 20px;
+    height: 2px;
+    opacity: 1;
+}
+.page-section--reasons-to-choose .accordion__title2:after {
+    right: 25px;
+    width: 2px;
+    height: 20px;
+    margin-top: -9px;
+}
+.page-section--reasons-to-choose .accordion__title2:after {
+    position: absolute;
+    content: "";
+    left: auto;
+    background: #ff9e20;
+    border: 0;
+    transition: all .2s ease-in-out;
+    transform: rotate(-90deg);
+}
+.item-header{
+    padding: 12px 50px 12px 20px;
+    font-size: 18px;
+    line-height: 1.56;
+    
+    margin: 0;
+    color: #484848;
 }
 .icon {
     width: 28px;
@@ -1070,8 +1233,9 @@ strong {
     display: block;
     width: 16px;
     height: 16px;
-    background-image: url(img/question-icon-correct.svg);
+    background-image: url(img/icon-question.svg);
     background-size: cover;
+    opacity: .5;
 }
 .accordion__title:after {
     top: 25px;
@@ -1181,7 +1345,7 @@ strong {
     left: 76px!important;
     width: 43px;
     height: 43px;
-    background-image: url(img/triangle-copy-7.svg);
+    background-image: url(img/line-easy.svg);
     background-size: cover;
 }
 .decoration-item--triangle2{
@@ -1190,9 +1354,8 @@ strong {
     width: 43px;
     height: 46px;
     background-size: cover;
-    transform: rotate(-195deg);
-  border-radius: 6px;
-  background-image: linear-gradient(to bottom, rgba(3, 188, 128, 0) -19%, #38ffbe 104%), linear-gradient(to bottom, #ade5d2, #ade5d2);
+    position: absolute!important;
+    background-image: url(img/triangle-easy.png);
 }
 .decoration-item--line-22 {
     bottom: 76px!important;
@@ -1261,7 +1424,7 @@ strong {
     height: 58px;
     padding: 35px 48px 33px;
     background-size: cover;
-    background-image: url(img/fill-4@2x.png);
+    background-image: url(img/cta-bg.jpg);
     border-radius: 5px;
 }
 .page-section--cta .page-section__flexible-wrapper {
@@ -1274,13 +1437,14 @@ strong {
 .section-title9{
     font-family: "Open Sans";
     font-size: 24px;
+    font-weight: 600;
     line-height: 1.3333;
     margin-top: 0;
     margin-bottom: 0;
     color: #fff;
 }
 .button2 {
-    min-width: 248px;
+    max-width: 248px;
     position: relative;
     display: inline-block;
     border: 1px solid #ff9000;
@@ -1302,6 +1466,7 @@ strong {
     -webkit-appearance: none;
 }
 .button--lg {
+    width: 254px;
     padding: 18px 20px;
     font-family: "Open Sans";
     font-size: 18px;
